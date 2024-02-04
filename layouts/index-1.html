@@ -55,10 +55,10 @@
     <header class="header relative z-20" :class="{ 'header-open': open }">
       <div class="overlay lg:hidden" @click="open = !open" :aria-expanded="open ? 'true' : 'false'"></div>
       <!-- header top bar -->
-      <div class="bg-dark-900 text-white text-sm font-medium py-2">
+      <div class="bg-dark-900 text-white text-sm font-medium py-2 hidden sm:block">
         <!-- container -->
         <div class="container flex justify-between items-center">
-          <!-- Follow us: -->
+            <!-- Follow us: -->
           <div class="flex items-center gap-5 md:gap-12">
             <div class="flex items-center gap-5 md:gap-4">
               <label class="hidden sm:block">Follow us:</label>
@@ -162,7 +162,6 @@
           </div>
         </div>
       </div>
-
       <!-- end hero section -->
 
       <!-- start Top Destinations section -->
@@ -186,7 +185,6 @@
                 class="transition-all group-hover:scale-105">
               <div class="categories-detail">
                 <a href="#">
-                  <h4>Nuwara Eliya</h4>
                 </a>
               </div>
             </div>
@@ -196,7 +194,6 @@
                 class="transition-all group-hover:scale-105">
               <div class="categories-detail">
                 <a href="#">
-                  <h4>Kandy</h4>
                 </a>
               </div>
             </div>
@@ -206,7 +203,6 @@
                 class="transition-all group-hover:scale-105">
               <div class="categories-detail">
                 <a href="#">
-                  <h4>Jaffna</h4>
                 </a>
               </div>
             </div>
@@ -216,13 +212,27 @@
                 class="transition-all group-hover:scale-105">
               <div class="categories-detail">
                 <a href="#">
-                  <h4>Mirissa</h4>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="mt-12">
-            <a href="#" class="btn btn-primary mx-auto">Explore all <i class="fa-regular fa-arrow-right ml-3"></i></a>
+            <!-- category box -->
+            <div class="category-box overflow-hidden group rounded-1xl relative">
+              <img src="assets/images/galle-fort.jpg" alt="categories img"
+                class="transition-all group-hover:scale-105">
+              <div class="categories-detail">
+                <a href="#">
+                </a>
+              </div>
+            </div>
+            <!-- category box -->
+            <div class="category-box overflow-hidden group rounded-1xl relative">
+              <img src="assets/images/caption.jpg" alt="categories img"
+                class="transition-all group-hover:scale-105">
+              <div class="categories-detail">
+                <a href="#">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -470,6 +480,17 @@
                 <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
+            <!-- Why choose us service box -->
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+              <div
+                class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
+                <i class="text-4xl text-primary-900 fa-solid fa-hand-holding-box"></i>
+              </div>
+              <div class="">
+                <h5 class="text-lg mb-2 text-white">Tour Packages</h5>
+                <p class="text-sm mb-0 text-white">Explore exciting destinations with our curated tour packages. Immerse yourself in new cultures and create lasting memories.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -650,7 +671,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer-part relative">
+    <footer class="footer-part relative bg-yellow-600">
       <!-- container -->
       <div class="container relative z-1">
         <!-- footer center-->
@@ -693,28 +714,6 @@
           </div>
           <div class="w-full lg:w-2/3 px-3">
             <div class="grid grid-cols-1 sm:grid-cols-3">
-              <!-- footer column -->
-              <div class="mb-6">
-                <h4 class="footer-title">Quick Links</h4>
-                <!-- footer menu -->
-                <ul class="space-y-3 text-15 text-dark-800">
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900 ">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Tour</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Destinations</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
               <!-- footer column -->
               <div class="mb-6">
                 <h4 class="footer-title">Contact Us</h4>
@@ -787,7 +786,6 @@
           </div>
         </div>
 
-
         <!-- footer bottom-->
         <div class="border-t border-gray-100 py-4 text-center md:text-left md:flex items-center justify-between">
           <p class="text-dark-900 text-md mb-0">Copyright 2024 <a href="index-1.html"
@@ -795,14 +793,8 @@
           <p class="text-dark-900 text-md mb-0">Design by <a href="https://www.eversoft.lk/"
               class="text-primary-900 hover:text-dark-900">Eversoft IT Solutions</a>.</p>
         </div>
-
-      </div>
-
-      <div class="footer-bg absolute bottom-0 left-0 w-full">
-        <img src="assets/images/footer-bg-img.jpg " alt="footer-bg-img">
       </div>
     </footer>
-
   </div>
 
   <!-- Custom Libraries script js start -->

@@ -30,13 +30,34 @@
 </head>
 
 <body>
-  <div class="text-md md:text-lg font-red-hat-display text-dark-800 leading-xl" x-data="{ show: false , open: false }">
+  <div class="bg-yellow-600 text-md md:text-lg font-red-hat-display text-dark-800 leading-xl"
+    x-data="{ show: false , open: false }">
+
+    <!-- Header search popup -->
+    <div :class="{ 'open': show }"
+      class="search-popup transition-all fixed -top-full left-0 w-full h-full bg-black/80 z-50 flex items-center">
+      <a href="javascript:;" @click="show = !show" :aria-expanded="show ? 'false' : 'true'"
+        class="absolute top-5 right-5 w-10 h-10 flex items-center justify-center"><img src="assets/images/close.svg"
+          alt="close"></a>
+      <!-- container -->
+      <div class="container text-center">
+        <form>
+          <div class="border-b border-white relative pr-[80px]">
+            <input type="text" placeholder="Search here" name=""
+              class="bg-transparent px-0 py-3 md:py-5 text-white text-left w-full text-md md:text-25">
+            <button
+              class="bg-primary-900 absolute top-0 right-0 w-12 h-10 md:w-[75px] md:h-[60px] rounded-sm text-white"><i
+                class="fa-regular fa-magnifying-glass"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
 
     <!-- start-header -->
     <header class="header relative z-20" :class="{ 'header-open': open }">
       <div class="overlay lg:hidden" @click="open = !open" :aria-expanded="open ? 'true' : 'false'"></div>
       <!-- header top bar -->
-      <div class="bg-primary-800 text-dark-900 text-sm font-medium py-2">
+      <div class="bg-dark-900 text-white text-sm font-medium py-2 hidden sm:block">
         <!-- container -->
         <div class="container flex justify-between items-center">
           <!-- Follow us: -->
@@ -51,20 +72,20 @@
             </div>
             <div class="flex items-center">
               <a href="tel:+12345454545" class="flex items-center gap-4 hover:text-primary-900"><i
-                  class="fa-solid fa-phone"></i> <span class="hidden md:block">+94 70 XXX XXXX</span></a>
+                  class="fa-solid fa-phone"></i> <span class="hidden md:block">+94 234 545 4545</span></a>
             </div>
           </div>
           <!-- Follow us: -->
         </div>
       </div>
       <!-- start header main navigation -->
-      <div class="main-navigation py-2">
+      <div class="main-navigation py-3 bg-dark-900">
         <!-- container -->
         <div class="container flex items-center justify-between">
           <!-- header logo-->
           <div class="logo">
-            <a href="index-1.html" class="max-w-[150px] sm:max-w-auto block">
-              <img src="#" alt="logo">
+            <a href="javascript:;" class="max-w-[150px] sm:max-w-auto block">
+              <img src="" alt="logo">
             </a>
           </div>
 
@@ -76,9 +97,9 @@
                 :aria-expanded="open ? 'true' : 'false'">
                 <img src="assets/images/close-dark.svg" alt="menu-close-icon">
               </button>
-              <ul class="lg:flex items-center lg:gap-1 text-sm lg:text-md text-dark-900 font-semibold">
-                <li><a href="index-1.html" class="hover:text-primary-900">Home</a></li>
-                <li class="active"><a href="about.html" class="hover:text-primary-900">About</a></li>
+              <ul class="lg:flex items-center lg:gap-1 text-sm lg:text-md text-yellow-600 font-semibold">
+                <li><a href="index-1.html" class="hover:text-primary-900 text-yellow-600">Home</a></li>
+                <li class="active"><a href="about.html" class="hover:text-primary-900 text-yellow-600">About</a></li>
                 </li>
               </ul>
             </div>
@@ -95,9 +116,6 @@
         </div>
       </div>
       <!-- end header main navigation -->
-      <!-- Mobile menu -->
-
-      <!-- End Mobile menu -->
     </header>
     <!-- end-header -->
 
@@ -141,30 +159,31 @@
         <div class="container">
           <!-- section heading -->
           <div class="text-center mb-8 md:mb-14">
-            <h2>We Are Travel Point</h2>
-            <p class="max-w-[590px] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <h2 class="text-black">We Are Travel Point</h2>
+            <p class="max-w-[590px] mx-auto text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            </p>
           </div>
           <!-- Top destinations grid list-->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+            <div class="bg-black pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
               <img src="assets/images/destinations-icon1.svg" alt="destinations-icon1" class="mx-auto mb-6">
-              <h2 class="text-[25px] md:text-4xl mb-2">678</h2>
-              <p class="text-primary-900 mb-0">Destinations</p>
+              <h2 class="text-[25px] md:text-4xl mb-2 text-white">678</h2>
+              <p class="text-white mb-0">Destinations</p>
             </div>
-            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+            <div class="bg-black pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
               <img src="assets/images/destinations-icon2.svg" alt="destinations-icon1" class="mx-auto mb-6">
-              <h2 class="text-[25px] md:text-4xl mb-2">2547</h2>
-              <p class="text-primary-900 mb-0">Amazing Tours</p>
+              <h2 class="text-[25px] md:text-4xl mb-2 text-white">2547</h2>
+              <p class="text-white mb-0">Amazing Tours</p>
             </div>
-            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+            <div class="bg-black pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
               <img src="assets/images/destinations-icon3.svg" alt="destinations-icon1" class="mx-auto mb-6">
-              <h2 class="text-[25px] md:text-4xl mb-2">98</h2>
-              <p class="text-primary-900 mb-0">Tour Types</p>
+              <h2 class="text-[25px] md:text-4xl mb-2 text-white">98</h2>
+              <p class="text-white mb-0">Tour Types</p>
             </div>
-            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+            <div class="bg-black pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
               <img src="assets/images/destinations-icon4.svg" alt="destinations-icon1" class="mx-auto mb-6">
-              <h2 class="text-[25px] md:text-4xl mb-2">12,567</h2>
-              <p class="text-primary-900 mb-0">Happy Customer</p>
+              <h2 class="text-[25px] md:text-4xl mb-2 text-white">12,567</h2>
+              <p class="text-white mb-0">Happy Customer</p>
             </div>
           </div>
         </div>
@@ -179,19 +198,20 @@
               <img src="assets/images/get-about-us-img.svg" alt="">
             </div>
             <div class="w-full md:w-1/2 px-4">
-              <h4 class="text-md uppercase font-bold text-primary-900 mb-2">Get About Us</h4>
-              <h2>We create the trips you love</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              <h4 class="text-md uppercase font-bold text-black mb-2">Get About Us</h4>
+              <h2 class="text-black">We create the trips you love</h2>
+              <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et
                 dolore magna aliqua. Sed viverra tellus in hac. Ut faucibus pulvinar elementum integer.</p>
 
               <ul class="ul-list border-b border-primary-800 mb-8">
                 <li>
                   <h6 class="text-lg mb-0 text-black">24 Years Experience</h6>
-                  <p class="text-md">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
+                  <p class="text-md text-black">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
                 </li>
                 <li>
                   <h6 class="text-lg mb-0 text-black">Best Travel Agents</h6>
-                  <p class="text-md">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
+                  <p class="text-md text-black">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
                 </li>
               </ul>
               <div class="">
@@ -251,28 +271,6 @@
           </div>
           <div class="w-full lg:w-2/3 px-3">
             <div class="grid grid-cols-1 sm:grid-cols-3">
-              <!-- footer column -->
-              <div class="mb-6">
-                <h4 class="footer-title">Quick Links</h4>
-                <!-- footer menu -->
-                <ul class="space-y-3 text-15 text-dark-800">
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900 ">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Tour</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Destinations</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Blog</a>
-                  </li>
-                  <li>
-                    <a href="#" class="text-dark-800 hover:text-primary-900">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
               <!-- footer column -->
               <div class="mb-6">
                 <h4 class="footer-title">Contact Us</h4>
@@ -356,9 +354,6 @@
 
       </div>
 
-      <div class="footer-bg absolute bottom-0 left-0 w-full">
-        <img src="assets/images/footer-bg-img.jpg" alt="footer-bg-img">
-      </div>
     </footer>
 
   </div>
