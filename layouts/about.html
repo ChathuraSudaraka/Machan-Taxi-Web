@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Page title -->
+  <title>Machan Taxi | Experience the better</title>
+  <!-- Project favicon link -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/gif">
+  <!-- All device viewport meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts style file -->
+  <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
+
+  <!-- Custom Libraries style start -->
+
+  <!-- Swiper Bundle slider style file -->
+  <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+  <!-- Aos animation style file -->
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+  <!-- Magnific Popup style file -->
+  <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+  <!-- Custom Libraries style end -->
+
+  <!-- Custom style file -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+
+
+</head>
+
+<body>
+  <div class="text-md md:text-lg font-red-hat-display text-dark-800 leading-xl" x-data="{ show: false , open: false }">
+
+    <!-- start-header -->
+    <header class="header relative z-20" :class="{ 'header-open': open }">
+      <div class="overlay lg:hidden" @click="open = !open" :aria-expanded="open ? 'true' : 'false'"></div>
+      <!-- header top bar -->
+      <div class="bg-primary-800 text-dark-900 text-sm font-medium py-2">
+        <!-- container -->
+        <div class="container flex justify-between items-center">
+          <!-- Follow us: -->
+          <div class="flex items-center gap-5 md:gap-12">
+            <div class="flex items-center gap-5 md:gap-4">
+              <label class="hidden sm:block">Follow us:</label>
+              <ul class="flex items-center gap-4">
+                <li><a href="#" class="hover:text-primary-900"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#" class="hover:text-primary-900"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" class="hover:text-primary-900"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="flex items-center">
+              <a href="tel:+12345454545" class="flex items-center gap-4 hover:text-primary-900"><i
+                  class="fa-solid fa-phone"></i> <span class="hidden md:block">+94 70 XXX XXXX</span></a>
+            </div>
+          </div>
+          <!-- Follow us: -->
+        </div>
+      </div>
+      <!-- start header main navigation -->
+      <div class="main-navigation py-2">
+        <!-- container -->
+        <div class="container flex items-center justify-between">
+          <!-- header logo-->
+          <div class="logo">
+            <a href="index-1.html" class="max-w-[150px] sm:max-w-auto block">
+              <img src="#" alt="logo">
+            </a>
+          </div>
+
+          <!-- Header right menu-->
+          <div class="flex items-center justify-end gap-5 lg:gap-10">
+            <!-- main menu -->
+            <div class="main-menu lg:block">
+              <button type="button" class="absolute top-0 right-0 lg:hidden p-1" @click="open = !open"
+                :aria-expanded="open ? 'true' : 'false'">
+                <img src="assets/images/close-dark.svg" alt="menu-close-icon">
+              </button>
+              <ul class="lg:flex items-center lg:gap-1 text-sm lg:text-md text-dark-900 font-semibold">
+                <li><a href="index-1.html" class="hover:text-primary-900">Home</a></li>
+                <li class="active"><a href="about.html" class="hover:text-primary-900">About</a></li>
+                </li>
+              </ul>
+            </div>
+
+            <!-- header button -->
+            <div class="flex items-center gap-5">
+              <div class="block lg:hidden">
+                <button type="button" @click="open = !open" :aria-expanded="open ? 'true' : 'false'">
+                  <img src="assets/images/menu-toggle-icon.svg" alt="menu-toggle-icon">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end header main navigation -->
+      <!-- Mobile menu -->
+
+      <!-- End Mobile menu -->
+    </header>
+    <!-- end-header -->
+
+    <!-- start main wrapper -->
+    <div class="main-wrapper">
+      <!-- start hero section -->
+      <section class="hero-section min-h-[260px] md:min-h-[340px] relative grid content-center py-14 md:py-20 lg:py-28">
+        <!-- hero banner img -->
+        <div
+          class="absolute top-0 left-0 w-full h-full before:absolute before:top-0 before:left-0 before:h-full before:w-full before:bg-dark-900/50">
+          <img src="assets/images/inner-banner-img.jpg" alt="inner hero img" class="w-full h-full object-cover">
+        </div>
+        <!-- start hero content -->
+        <div class="hero-content-slider relative z-1">
+          <!-- container -->
+          <div class="container text-center">
+            <h1 class="text-white text-30 md:text-4xl leading-normal mb-0">About</h1>
+            <!--Second breadcrumb-->
+            <nav class="w-full rounded-md">
+              <ol class="list-reset flex justify-center text-white text-md md:text-lg font-normal">
+                <li>
+                  <a href="index-1.html" class="text-gray-300 hover:text-white">Home</a>
+                </li>
+                <li>
+                  <span class="mx-2 text-gray-300">></span>
+                </li>
+                <li class="">About</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        <!-- end hero content slider-->
+
+      </section>
+      <!-- start hero section -->
+
+      <!-- start About page -->
+      <!-- start icon grid section -->
+      <section class="">
+        <!-- container -->
+        <div class="container">
+          <!-- section heading -->
+          <div class="text-center mb-8 md:mb-14">
+            <h2>We Are Travel Point</h2>
+            <p class="max-w-[590px] mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+          </div>
+          <!-- Top destinations grid list-->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+              <img src="assets/images/destinations-icon1.svg" alt="destinations-icon1" class="mx-auto mb-6">
+              <h2 class="text-[25px] md:text-4xl mb-2">678</h2>
+              <p class="text-primary-900 mb-0">Destinations</p>
+            </div>
+            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+              <img src="assets/images/destinations-icon2.svg" alt="destinations-icon1" class="mx-auto mb-6">
+              <h2 class="text-[25px] md:text-4xl mb-2">2547</h2>
+              <p class="text-primary-900 mb-0">Amazing Tours</p>
+            </div>
+            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+              <img src="assets/images/destinations-icon3.svg" alt="destinations-icon1" class="mx-auto mb-6">
+              <h2 class="text-[25px] md:text-4xl mb-2">98</h2>
+              <p class="text-primary-900 mb-0">Tour Types</p>
+            </div>
+            <div class="bg-white pt-8 pb-6 px-3 text-center shadow-card-1 rounded-xl h-full">
+              <img src="assets/images/destinations-icon4.svg" alt="destinations-icon1" class="mx-auto mb-6">
+              <h2 class="text-[25px] md:text-4xl mb-2">12,567</h2>
+              <p class="text-primary-900 mb-0">Happy Customer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end icon grid section -->
+      <!-- start Get About Us section -->
+      <section class="py-12 about-section2">
+        <!-- container -->
+        <div class="container">
+          <div class="flex flex-wrap items-center -mx-4">
+            <div class="w-full md:w-1/2 px-4">
+              <img src="assets/images/get-about-us-img.svg" alt="">
+            </div>
+            <div class="w-full md:w-1/2 px-4">
+              <h4 class="text-md uppercase font-bold text-primary-900 mb-2">Get About Us</h4>
+              <h2>We create the trips you love</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Sed viverra tellus in hac. Ut faucibus pulvinar elementum integer.</p>
+
+              <ul class="ul-list border-b border-primary-800 mb-8">
+                <li>
+                  <h6 class="text-lg mb-0 text-black">24 Years Experience</h6>
+                  <p class="text-md">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
+                </li>
+                <li>
+                  <h6 class="text-lg mb-0 text-black">Best Travel Agents</h6>
+                  <p class="text-md">Feugiat scelerisque varius morbi enim nunc faucibus a.</p>
+                </li>
+              </ul>
+              <div class="">
+                <a href="#" class="btn btn-primary">Discover more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end Get About Us section -->
+
+
+      <!-- end About page -->
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-part relative">
+      <!-- container -->
+      <div class="container relative z-1">
+        <!-- footer center-->
+        <div class="flex flex-wrap -mx-4 pt-10 border-t border-gray-100">
+          <div class="w-full lg:w-1/3 px-3">
+            <!-- footer column -->
+            <div class="mb-10 lg:mb-6 text-center lg:text-left lg:max-w-[260px]">
+              <div class="mb-3 lg:mb-6">
+                <a href="index-1.html" class="inline-block">
+                  <img src="#" alt="logo-dark">
+                </a>
+              </div>
+              <p class="mb-5 font-normal text-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempo.</p>
+
+              <!-- Social icon -->
+              <ul class="flex items-center justify-center lg:justify-start space-x-4 text-md text-primary-900">
+                <li>
+                  <a href="#"
+                    class="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-primary-800 hover:bg-primary-900 hover:text-white"><i
+                      class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-primary-800 hover:bg-primary-900 hover:text-white"><i
+                      class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-primary-800 hover:bg-primary-900 hover:text-white"><i
+                      class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-primary-800 hover:bg-primary-900 hover:text-white"><i
+                      class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full lg:w-2/3 px-3">
+            <div class="grid grid-cols-1 sm:grid-cols-3">
+              <!-- footer column -->
+              <div class="mb-6">
+                <h4 class="footer-title">Quick Links</h4>
+                <!-- footer menu -->
+                <ul class="space-y-3 text-15 text-dark-800">
+                  <li>
+                    <a href="#" class="text-dark-800 hover:text-primary-900 ">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Tour</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Destinations</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- footer column -->
+              <div class="mb-6">
+                <h4 class="footer-title">Contact Us</h4>
+                <!-- footer contact detail -->
+                <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
+                      src="assets/images/pin.svg" alt="call-sharp"></span>28 W Colombo XXXX XXXX</p>
+                <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
+                      src="assets/images/call-sharp.svg" alt="call-sharp"></span><a href="tel:(630) 844-0400"
+                    class="hover:text-primary-900">+94 70 XXX XXXX</a></p>
+                <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
+                      src="assets/images/mail-unread.svg" alt="call-sharp"></span><a href="mailto:journeya@gmail.com"
+                    class="hover:text-primary-900">Example.com</a></p>
+              </div>
+              <!-- footer column -->
+              <div class="mb-6">
+                <h4 class="footer-title">Gallery</h4>
+                <!-- footer Gallery -->
+                <div class="grid grid-cols-4 gap-3">
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img1.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img2.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img3.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img4.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img5.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img6.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img7.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                  <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
+                    <a href="#" class="absolute top-0 left-0 h-full w-full block">
+                      <img src="assets/images/footer-gallery-img8.jpg" alt="footer-gallery-img1"
+                        class="transition-all group-hover:scale-105 w-full h-full object-cover duration-300">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- footer bottom-->
+        <div class="border-t border-gray-100 py-4 text-center md:text-left md:flex items-center justify-between">
+          <p class="text-dark-900 text-md mb-0">Copyright 2024 <a href="index-1.html"
+              class="text-primary-900 hover:text-dark-900">MachanTaxi</a>. All Rights Reserved.</p>
+          <p class="text-dark-900 text-md mb-0">Design by <a href="https://www.eversoft.lk/"
+              class="text-primary-900 hover:text-dark-900">Eversoft IT Solutions</a>.</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bg absolute bottom-0 left-0 w-full">
+        <img src="assets/images/footer-bg-img.jpg" alt="footer-bg-img">
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Custom Libraries script js start -->
+  <!-- jquery min js file -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Swiper bundle js file -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <!-- Isotope js file -->
+  <script src="assets/js/isotope.pkgd.js"></script>
+  <!-- Aos animation js file -->
+  <script src="assets/js/aos.js"></script>
+  <!-- Magnific popup min js file -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+  <!-- custom script js -->
+  <script src="assets/js/alpine.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+  <!-- Use this minifiy js for project speeded loading -->
+  <!-- <script src="assets/js/custom.min.js"></script> -->
+
+</body>
+
+</html>
