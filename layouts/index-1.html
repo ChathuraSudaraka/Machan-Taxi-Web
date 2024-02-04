@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="bg-orange-500">
+<body>
   <div class="text-md md:text-lg font-red-hat-display text-dark-800 leading-xl" x-data="{ show: false , open: false }">
 
     <!-- Header search popup -->
@@ -95,9 +95,9 @@
                 :aria-expanded="open ? 'true' : 'false'">
                 <img src="assets/images/close-dark.svg" alt="menu-close-icon">
               </button>
-              <ul class="lg:flex items-center lg:gap-1 text-sm lg:text-md text-yellow-900 font-semibold">
-                <li class="active"><a href="index-1.html" class="hover:text-primary-900">Home</a></li>
-                <li><a href="about.html" class="hover:text-primary-900">About</a></li>
+              <ul class="lg:flex items-center lg:gap-1 text-sm lg:text-md text-yellow-600 font-semibold">
+                <li class="active"><a href="index-1.html" class="hover:text-primary-900 text-yellow-600">Home</a></li>
+                <li><a href="about.html" class="hover:text-primary-900 text-yellow-600">About</a></li>
                 </li>
               </ul>
             </div>
@@ -120,57 +120,59 @@
     <!-- start main wrapper -->
     <div class="main-wrapper">
       <!-- start hero section -->
-      <section
-        class="hero-section min-h-[calc(100vh-116px)]  relative grid content-end pt-0 md:pt-24 pb-5 md:py-20 lg:py-28">
-        <!-- hero banner img -->
-        <div class="md:absolute top-0 right-0 w-full md:w-1/2 h-full hidden sm:block">
-          <img src="assets/images/home-2-hero-img.jpg" alt="hero img" class="w-full h-full object-cover">
-        </div>
-        <!-- start hero content -->
-        <div class="hero-content-slider relative z-1 py-5 md:py-0">
-          <!-- container -->
-          <div class="container">
-            <div class="max-w-sm lg:max-w-md xl:max-w-xl">
-              <h1 class="mb-5 md:mb-7 text-3xl sm:text-4xl xl:text-65 leading-tight">Explore our <span
-                  class="text-yellow-900">Wonderful</span> trips</h1>
-              <p class="mb-6 text-dark-800 text-md lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="#" class="btn btn-primary mx-0">Book now <i class="fa-regular fa-arrow-right ml-3"></i></a>
-            </div>
-            <!-- booking form -->
+      <div class="bg-yellow-600">
+        <div class="relative isolate px-6 pt-0 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            aria-hidden="true">
             <div
-              class="booking-form booking-2 bg-white rounded-xl mt-12 p-4 text-left w-full max-w-[880px] md:flex gap-5 items-center">
-              <div class="w-full text-dark-900 font-semibold text-lg">
-                <input type="text" placeholder="Type your keyword here...." name="" class="form-control">
-              </div>
-              <div class="w-full text-dark-900 font-semibold text-lg">
-                <input type="text" placeholder="Where...?" name="" class="form-control bg-gray-200">
-              </div>
-              <div class="w-full text-dark-900 font-semibold text-lg">
-                <input type="text" placeholder="When....?" name="" class="form-control bg-gray-200">
-              </div>
-              <div class="fl">
-                <button type="button"
-                  class="bg-primary-900 rounded-[3px] w-full md:w-[85px] h-[50px] flex items-center justify-center text-white text-xl hover:">
-                  <i class="fa-regular fa-magnifying-glass"></i>
-                </button>
+              class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+              style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+          </div>
+          <div class="mx-auto max-w-2xl py-14 sm:py-36">
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">MachanTaxi</h1>
+              <h2 class="mt-6 text-2xl leading-8 text-black">Sri Lankan Reliable Taxi Service</h2>
+              <div
+                class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:justify-center sm:items-center sm:gap-x-6">
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                  <a href="#" class="p-4 rounded-md bg-black shadow-sm hover:bg-primary-900 text-white"><i
+                      class="fa-brands fa-whatsapp text-2xl"></i></a>
+                  <a href="#" class="p-4 rounded-md bg-black shadow-sm hover:bg-primary-900 text-white"><i
+                      class="fa-brands fa-facebook text-2xl"></i></a>
+                </div>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                  <a href="#" class="p-4 sm:p-6 rounded-md bg-black shadow-sm hover:bg-primary-900 text-white"><i
+                      class="fa-brands fa-youtube text-2xl sm:text-2xl"></i></a>
+                  <a href="#" class="p-4 sm:p-6 rounded-md bg-black shadow-sm hover:bg-primary-900 text-white"><i
+                      class="fa-solid fa-phone text-2xl sm:text-2xl"></i></a>
+                </div>
+                <a href="#" class="p-4 sm:p-6 rounded-md bg-black shadow-sm hover:bg-primary-900 text-white"><i
+                    class="fa-solid fa-envelope text-2xl sm:text-2xl"></i></a>
               </div>
             </div>
           </div>
+          <div
+            class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+            aria-hidden="true">
+            <div
+              class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+              style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
+          </div>
         </div>
-        <!-- end hero content slider-->
+      </div>
 
-      </section>
       <!-- end hero section -->
 
       <!-- start Top Destinations section -->
-      <section class="">
+      <section class="bg-yellow-600">
         <!-- container -->
         <div class="container">
           <!-- section heading -->
           <div class="text-center mb-8 md:mb-14">
-            <h2 class="text-yellow-900">Our Service</h2>
-            <p class="max-w-[590px] mx-auto text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <h2 class="text-black">Our Service</h2>
+            <p class="max-w-[590px] mx-auto text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
               tempor incididunt</p>
           </div>
@@ -185,7 +187,6 @@
               <div class="categories-detail">
                 <a href="#">
                   <h4>Nuwara Eliya</h4>
-                  <div class="tours-btn">3 Tours</div>
                 </a>
               </div>
             </div>
@@ -196,7 +197,6 @@
               <div class="categories-detail">
                 <a href="#">
                   <h4>Kandy</h4>
-                  <div class="tours-btn">5 Tours</div>
                 </a>
               </div>
             </div>
@@ -207,7 +207,6 @@
               <div class="categories-detail">
                 <a href="#">
                   <h4>Jaffna</h4>
-                  <div class="tours-btn">2 Tours</div>
                 </a>
               </div>
             </div>
@@ -218,7 +217,6 @@
               <div class="categories-detail">
                 <a href="#">
                   <h4>Mirissa</h4>
-                  <div class="tours-btn">8 Tours</div>
                 </a>
               </div>
             </div>
@@ -231,7 +229,7 @@
       <!-- end Top Destinations section -->
 
       <!-- start about section -->
-      <section class="">
+      <section class="bg-yellow-600">
         <!-- container -->
         <div class="container">
           <div class="flex flex-wrap -mx-4">
@@ -255,13 +253,13 @@
             </div>
             <!-- about content -->
             <div class="w-full md:w-2/4 px-4 mt-10 md:mt-0">
-              <h2 class="text-yellow-900">A Simply Perfect Place To Get Lost</h2>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              <h2 class="text-black">A Simply Perfect Place To Get Lost</h2>
+              <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et
                 dolore magna aliqua. Urna nunc id cursus metus aliquam eleifend. Integer enim neque volutpat ac
                 tincidunt vitae. </p>
 
-              <ul class="ul-list mb-9 text-white">
+              <ul class="ul-list mb-9 text-black">
                 <li>Adipiscing elit ut aliquam purus sit</li>
                 <li>Amet luctus venenatis. Felis bibendum</li>
                 <li>Ut tristique et egestas quis. Gravida in</li>
@@ -270,14 +268,15 @@
               </ul>
 
               <div
-                class="bg-white rounded-xl py-4 px-4 xl:px-5 shadow-box-1 justify-between flex flex-wrap lg:flex-nowrap items-center gap-5 text-md xl:text-lg text-dark-900">
-                <a href="tel:+12345455454" class="flex items-center gap-2 xl:gap-4 hover:text-primary-900">
+                class="bg-black rounded-xl py-4 px-4 xl:px-5 shadow-box-1 justify-between flex flex-wrap lg:flex-nowrap items-center gap-5 text-md xl:text-lg text-dark-900">
+                <a href="tel:+12345455454" class="flex items-center gap-2 xl:gap-4 text-white hover:text-primary-900">
                   <span
                     class="bg-primary-900 w-[46px] h-[46px] rounded-full flex items-center justify-center text-white text-lg shrink-0"><i
                       class="fa-solid fa-phone"></i></span>
                   +94 70 XXX XXXX
                 </a>
-                <a href="mailto:journeya@gmail.com" class="flex items-center gap-2 xl:gap-4 hover:text-primary-900">
+                <a href="mailto:journeya@gmail.com"
+                  class="flex items-center gap-2 xl:gap-4 text-white hover:text-primary-900">
                   <span
                     class="bg-primary-900 w-[46px] h-[46px] rounded-full flex items-center justify-center text-white text-lg shrink-0"><i
                       class="fa-solid fa-envelope"></i></span>
@@ -292,7 +291,7 @@
 
 
       <!-- Video section Start-->
-      <section class=" py-10 md:py-20 lg:py-28 overflow-hidden bg-gray-900">
+      <section class="bg-yellow-600 py-10 md:py-20 lg:py-28 overflow-hidden bg-gray-900">
         <div class="container mx-auto flex flex-wrap lg:flex-nowrap">
           <div class="w-full  flex items-center">
             <video class="w-full h-full object-cover rounded-lg md:hidden lg:block" controls autoplay muted loop
@@ -303,12 +302,12 @@
           </div>
 
           <div class="w-full mt-6 md:mt-0 lg:w-1/2 lg:px-8">
-            <div class="flex flex-col justify-between rounded-lg shadow-lg lg:bg-transparent lg:shadow-none">
+            <div class="flex flex-col justify-between lg:bg-transparent lg:shadow-none">
               <div>
-                <h2 class=" font-bold text-yellow-900">Discover the Sri Lanka</h2>
-                <p class="mt-2 text-white">Sri Lanka, off India's southern coast, is an island nation surrounded by
+                <h2 class=" font-bold text-black">Discover the Sri Lanka</h2>
+                <p class="mt-2 text-black">Sri Lanka, off India's southern coast, is an island nation surrounded by
                   the Indian Ocean, Gulf of Mannar, and Palk Strait.</p>
-                <ul class="ul-list mb-9 text-white">
+                <ul class="ul-list mb-9 text-black">
                   <li>Heart of the Indian Ocean</li>
                   <li>Sri Lanka used to be called Ceylon which is the transliteration of Ceilao.</li>
                   <li>The oldest living tree known to be planted by man is in Sri Lanka.</li>
@@ -322,13 +321,13 @@
 
 
       <!-- start Perfect travel planner section -->
-      <section class=" py-10 md:py-20 lg:py-28 relative">
+      <section class="bg-yellow-600 py-10 md:py-20 lg:py-28 relative">
         <!-- container -->
         <div class="container">
           <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5">
             <div class="text-center md:text-left">
-              <h2 class="text-yellow-900">Perfect travel planner for you and your family</h2>
-              <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+              <h2 class="text-black">Perfect travel planner for you and your family</h2>
+              <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
               <div class="flex justify-center md:justify-start items-center mb-5">
                 <img
                   class="object-cover w-10 h-10 -mx-1 border-2 border-white rounded-full dark:border-gray-700 shrink-0"
@@ -378,7 +377,7 @@
             </div>
             <div class="text-center md:text-left">
               <h5 class="text-xl mb-5 font-bold">Waiting for adventures? Don`t miss them</h5>
-              <p class="mb-8 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+              <p class="mb-8 text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               <div class="grid grid-cols-0 sm:grid-cols-3 gap-2 lg:gap-5">
                 <div>
                   <h4 class="text-primary-900 mb-0">20</h4>
@@ -402,7 +401,7 @@
       <!-- end Perfect travel planner section -->
 
       <!-- start Why choose us section -->
-      <section class=" pt-20 md:pt-32 pb-10 md:pb-20 lg:pb-28 lg:-mt-14 relative">
+      <section class="bg-yellow-600 pt-20 md:pt-32 pb-10 md:pb-20 lg:pb-28 lg:-mt-14 relative">
         <!-- <div class="absolute -top-0 lg:-top-12 left-0 w-full">
           <img src="assets/images/why-choose-us-bg.svg" alt="why-choose-us-bg" class="w-full block">
         </div> -->
@@ -410,65 +409,65 @@
         <div class="container relative">
           <!-- section heading -->
           <div class="text-center mb-10 md:mb-14">
-            <h2 class="text-yellow-900">Why choose us?</h2>
-            <p class="max-w-[590px] mx-auto text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            <h2 class="text-black">Why choose us?</h2>
+            <p class="max-w-[590px] mx-auto text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod
               tempor incididunt</p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-7">
             <!-- Why choose us service box -->
-            <div class="shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
               <div
                 class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
                 <img src="assets/images/world-tour-icon.svg" alt="world-tour-icon" class="">
               </div>
               <div class="">
                 <h5 class="text-lg mb-2 text-white">Set Travel Plan</h5>
-                <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
             <!-- Why choose us service box -->
-            <div class="shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
               <div
                 class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
                 <img src="assets/images/travelling-icon.svg" alt="world-tour-icon" class="">
               </div>
               <div class="">
                 <h5 class="text-lg mb-2 text-white">Explore Around</h5>
-                <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
             <!-- Why choose us service box -->
-            <div class="shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
               <div
                 class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
                 <img src="assets/images/best-guide-icon.svg" alt="world-tour-icon" class="">
               </div>
               <div class="">
                 <h5 class="text-lg mb-2 text-white">Best Guide</h5>
-                <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
             <!-- Why choose us service box -->
-            <div class="bg-yellow-900 shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
               <div
                 class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
                 <img src="assets/images/support-icon.svg" alt="world-tour-icon" class="">
               </div>
               <div class="">
                 <h5 class="text-lg mb-2 text-white">Support 24/7</h5>
-                <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
             <!-- Why choose us service box -->
-            <div class="shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
+            <div class="bg-black shadow-box-2 group rounded-4xl py-3 md:py-5 px-3 flex items-center gap-5">
               <div
                 class="bg-primary-800 rounded-2xl w-24 h-24 flex items-center justify-center shrink-0 transition-all">
                 <img src="assets/images/easy-booking-icon.svg" alt="world-tour-icon" class="">
               </div>
               <div class="">
                 <h5 class="text-lg mb-2 text-white">Easy Booking</h5>
-                <p class="text-sm mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                <p class="text-sm mb-0 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
               </div>
             </div>
           </div>
@@ -477,15 +476,15 @@
       <!-- end Why choose us section -->
 
       <!-- start Testimonial section -->
-      <section class=" py-10 md:py-16 relative">
+      <section class="bg-yellow-600 py-10 md:py-16 relative">
         <!-- container -->
         <div class="container">
           <div class="flex flex-wrap items-center">
             <!-- section heading -->
             <div class="w-full md:w-2/5">
               <div class="md:max-w-[406px]">
-                <h2 class="text-yellow-900">What our Travelers are saying</h2>
-                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                <h2 class="text-black">What our Travelers are saying</h2>
+                <p class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
               </div>
             </div>
             <!-- testimonial slider-->
@@ -497,35 +496,35 @@
               <div class="swiper mySwiper py-5 px-3">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="shadow-card-3 p-5 bg-white rounded-4xl">
-                      <div class="flex items-center space-x-1 text-yellow-900 mb-5">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    <div class="shadow-card-3 p-5 bg-black rounded-4xl">
+                      <div class="flex items-center space-x-1 mb-5">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                         <svg class="w-3 h-3 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                          xmlns="http://www.w3.org/2000/svg" fill="yellow" viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                       </div>
-                      <p class="text-dark-900 text-md mb-10">“Six days of cycling on and off road, tough but super
+                      <p class="text-white text-md mb-10">“Six days of cycling on and off road, tough but super
                         enjoyable and interesting. Lucky to have a great group and tour guide, Alfonso.”</p>
 
                       <div class="flex border-t border-gray-100 pt-3">
@@ -534,7 +533,7 @@
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                             alt="profile picture">
                           <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div class="text-dark-900 text-sm font-bold leading-normal">John Borthe</div>
+                            <div class="text-white text-sm font-bold leading-normal">John Borthe</div>
                             <div class="text-10 font-light text-dark-800 leading-normal dark:text-gray-400">
                               Newzealand-NZ</div>
                           </div>
@@ -543,35 +542,35 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="shadow-card-3 p-5 bg-white rounded-4xl">
-                      <div class="flex items-center space-x-1 text-yellow-900 mb-5">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    <div class="shadow-card-3 p-5 bg-black rounded-4xl">
+                      <div class="flex items-center space-x-1 mb-5">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                         <svg class="w-3 h-3 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                          xmlns="http://www.w3.org/2000/svg" fill="yellow" viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                       </div>
-                      <p class="text-dark-900 text-md mb-10">“The tours in this website are great. I had been really
+                      <p class="text-white text-md mb-10">“The tours in this website are great. I had been really
                         enjoy with my family! The team is very professional and taking care of the customers. Will
                         surely recommend to my freind to join this company!”</p>
 
@@ -581,7 +580,7 @@
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                             alt="profile picture">
                           <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div class="text-dark-900 text-sm font-bold leading-normal">John Borthe</div>
+                            <div class="text-white text-sm font-bold leading-normal">John Borthe</div>
                             <div class="text-10 font-light text-dark-800 leading-normal dark:text-gray-400">
                               Newzealand-NZ</div>
                           </div>
@@ -590,35 +589,35 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="shadow-card-3 p-5 bg-white rounded-4xl">
+                    <div class="shadow-card-3 p-5 bg-black rounded-4xl">
                       <div class="flex items-center space-x-1 text-yellow-900 mb-5">
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
-                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="yellow"
                           viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                         <svg class="w-3 h-3 text-gray-300 dark:text-gray-500" aria-hidden="true"
-                          xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                          xmlns="http://www.w3.org/2000/svg" fill="yellow" viewBox="0 0 22 20">
                           <path
                             d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
                         </svg>
                       </div>
-                      <p class="text-dark-900 text-md mb-10">“Six days of cycling on and off road, tough but super
+                      <p class="text-white text-md mb-10">“Six days of cycling on and off road, tough but super
                         enjoyable and interesting. Lucky to have a great group and tour guide, Alfonso.”</p>
 
                       <div class="flex border-t border-gray-100 pt-3">
@@ -627,7 +626,7 @@
                             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
                             alt="profile picture">
                           <div class="space-y-0.5 font-medium dark:text-white text-left">
-                            <div class="text-dark-900 text-sm font-bold leading-normal">John Borthe</div>
+                            <div class="text-white text-sm font-bold leading-normal">John Borthe</div>
                             <div class="text-10 font-light text-dark-800 leading-normal dark:text-gray-400">
                               Newzealand-NZ</div>
                           </div>
@@ -651,7 +650,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer-part relative ">
+    <footer class="footer-part relative">
       <!-- container -->
       <div class="container relative z-1">
         <!-- footer center-->
@@ -664,7 +663,7 @@
                   <img src="#" alt="logo-dark">
                 </a>
               </div>
-              <p class="mb-5 font-normal text-15 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              <p class="mb-5 font-normal text-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempo.</p>
 
               <!-- Social icon -->
@@ -700,38 +699,38 @@
                 <!-- footer menu -->
                 <ul class="space-y-3 text-15 text-dark-800">
                   <li>
-                    <a href="#" class="text-white hover:text-primary-900 ">About Us</a>
+                    <a href="#" class="text-dark-800 hover:text-primary-900 ">About Us</a>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-primary-900">Tour</a>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Tour</a>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-primary-900">Destinations</a>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Destinations</a>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-primary-900">Blog</a>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Blog</a>
                   </li>
                   <li>
-                    <a href="#" class="text-white hover:text-primary-900">Contact Us</a>
+                    <a href="#" class="text-dark-800 hover:text-primary-900">Contact Us</a>
                   </li>
                 </ul>
               </div>
               <!-- footer column -->
               <div class="mb-6">
-                <h4 class="footer-title text-white">Contact Us</h4>
+                <h4 class="footer-title">Contact Us</h4>
                 <!-- footer contact detail -->
-                <p class="pl-7 relative text-15 mb-3 text-white"><span class="absolute top-2 left-0"><img
+                <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
                       src="assets/images/pin.svg" alt="call-sharp"></span>28 W Colombo XXXX XXXX</p>
                 <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
                       src="assets/images/call-sharp.svg" alt="call-sharp"></span><a href="tel:(630) 844-0400"
-                    class="text-white hover:text-primary-900">+94 70 XXX XXXX</a></p>
+                    class="hover:text-primary-900">+94 70 XXX XXXX</a></p>
                 <p class="pl-7 relative text-15 mb-3"><span class="absolute top-2 left-0"><img
                       src="assets/images/mail-unread.svg" alt="call-sharp"></span><a href="mailto:journeya@gmail.com"
-                    class="text-white hover:text-primary-900">Example.com</a></p>
+                    class="hover:text-primary-900">Example.com</a></p>
               </div>
               <!-- footer column -->
               <div class="mb-6">
-                <h4 class="footer-title text-white">Gallery</h4>
+                <h4 class="footer-title">Gallery</h4>
                 <!-- footer Gallery -->
                 <div class="grid grid-cols-4 gap-3">
                   <div class="overflow-hidden relative group rounded-xl before:block before:pt-full">
@@ -791,12 +790,16 @@
 
         <!-- footer bottom-->
         <div class="border-t border-gray-100 py-4 text-center md:text-left md:flex items-center justify-between">
-          <p class="text-white text-md mb-0">Copyright 2024 <a href="index-1.html"
-              class="text-primary-900 hover:text-white">MachanTaxi</a>. All Rights Reserved.</p>
-          <p class="text-white text-md mb-0">Design by <a href="https://www.eversoft.lk/"
-              class="text-primary-900 hover:text-white">Eversoft IT Solutions</a>.</p>
+          <p class="text-dark-900 text-md mb-0">Copyright 2024 <a href="index-1.html"
+              class="text-primary-900 hover:text-dark-900">MachanTaxi</a>. All Rights Reserved.</p>
+          <p class="text-dark-900 text-md mb-0">Design by <a href="https://www.eversoft.lk/"
+              class="text-primary-900 hover:text-dark-900">Eversoft IT Solutions</a>.</p>
         </div>
 
+      </div>
+
+      <div class="footer-bg absolute bottom-0 left-0 w-full">
+        <img src="assets/images/footer-bg-img.jpg " alt="footer-bg-img">
       </div>
     </footer>
 
